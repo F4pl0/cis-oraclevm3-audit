@@ -1,0 +1,5 @@
+# Add CSV output
+*.csv
+
+# Any text or log files
+*.txt
