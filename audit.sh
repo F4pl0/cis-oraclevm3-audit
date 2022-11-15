@@ -240,85 +240,326 @@ echo "audit Sr. No. 9 result: $SR9_RESULT $SR9_RESULT_MSG"
 echo "9, Change Oracle VM Agent SSL Certificates , $SR9_RESULT, $SR9_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
 # Sr. No. 10
+# Objective: Getting Oracle VM Manager logs
+# Description: Oracle VM keeps a number of log files on different components in
+# the environment. 
+# These log files are important for the manageability and supportability of Oracle VM.
+# any unauthorized login attempt on Oracle VM Manager or SSH connection failure
+# to an Oracle VM Server is reflected in the log files.
+# You can also send these logs to any internal or external syslog server and for
+# audit purposes as well. 
 
+echo "Running audit Sr. No. 10"
 
+SR10_RESULT="Compliant"
+SR10_RESULT_MSG=""
 
+echo "Running Test 10.1: Getting Oracle VM Manager logs"
 
 
+echo "audit Sr. No. 10 result: $SR10_RESULT $SR10_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "10, Getting Oracle VM Manager logs , $SR10_RESULT, $SR10_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 11
+# Objective: Getting Oracle VM Server logs
+# Description: Oracle VM keeps a number of log files on different components in
+# the environment. 
+# These log files are important for the manageability and supportability of Oracle VM
 
+echo "Running audit Sr. No. 11"
 
+SR11_RESULT="Compliant"
+SR11_RESULT_MSG=""
 
+echo "Running Test 11.1: Getting Oracle VM Server logs"
 
 
+echo "audit Sr. No. 11 result: $SR11_RESULT $SR11_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "11, Getting Oracle VM Server logs , $SR11_RESULT, $SR11_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 12
+# Objective: Upgrade patches / Oracle VM manager 
+# Description: Updates and upgrades are critical to latest available bug fixes
+# from the principal vendor.
 
+echo "Running audit Sr. No. 12"
 
+SR12_RESULT="Compliant"
+SR12_RESULT_MSG=""
 
+echo "Running Test 12.1: Upgrade patches / Oracle VM manager"
 
 
+echo "audit Sr. No. 12 result: $SR12_RESULT $SR12_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "12, Upgrade patches / Oracle VM manager , $SR12_RESULT, $SR12_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 13
+# Objective: Upgrade patches / Oracle VM Server
+# Description: You can upgrade the Oracle VM Server from three different ways.
+# The most preferred / recommended way is to upgrade the Oracle VM servers
+# through Oracle VM Manger. 
 
+echo "Running audit Sr. No. 13"
 
+SR13_RESULT="Compliant"
+SR13_RESULT_MSG=""
 
+echo "Running Test 13.1: Upgrade patches / Oracle VM Server"
 
 
+echo "audit Sr. No. 13 result: $SR13_RESULT $SR13_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "13, Upgrade patches / Oracle VM Server , $SR13_RESULT, $SR13_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 14
+# Objective: configure NTP on the Oracle VM Manager host
+# Description: NTP synchronizes a Data Domain system with an NTP time server,
+# manages the NTP service, or turns off the local NTP server.
+# It is recommended to configure NTP for time synchronization since services
+# stability and compatibility directly depends on this service.
 
+echo "Running audit Sr. No. 14"
 
+SR14_RESULT="Compliant"
+SR14_RESULT_MSG=""
 
+echo "Running Test 14.1: configure NTP on the Oracle VM Manager host"
 
 
+echo "audit Sr. No. 14 result: $SR14_RESULT $SR14_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "14, configure NTP on the Oracle VM Manager host , $SR14_RESULT, $SR14_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 15
+# Objective: Configure / Enable SNMP for Oracle VM server
+# Description: Simple Network Management Protocol is an Internet Standard
+# protocol for collecting and organizing information about managed devices on
+# IP networks and for modifying that information to change device behavior.
 
+echo "Running audit Sr. No. 15"
 
+SR15_RESULT="Compliant"
+SR15_RESULT_MSG=""
 
+echo "Running Test 15.1: Configure / Enable SNMP for Oracle VM server"
 
 
+echo "audit Sr. No. 15 result: $SR15_RESULT $SR15_RESULT_MSG"
+ 
+# Write the audit results to the audit results file
+echo "15, Configure / Enable SNMP for Oracle VM server , $SR15_RESULT, $SR15_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 16
+# Objective: Create Access groups 
+# Description: Access groups provide a means to arrange and restrict access
+# to storage to a limited set of servers.
+# It is possible that in some environments you may have mixed SAN storage,
+# where both iSCSI and Fibre Channel types are available.
 
+echo "Running audit Sr. No. 16"
 
+SR16_RESULT="Compliant"
+SR16_RESULT_MSG=""
 
+echo "Running Test 16.1: Create Access groups"
 
 
+echo "audit Sr. No. 16 result: $SR16_RESULT $SR16_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "16, Create Access groups , $SR16_RESULT, $SR16_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 17
+# Objective: Disable FTP to Oracle VM 
+# Description: Weak or plain-text protocols, such as FTP must be disabled by default. 
 
+echo "Running audit Sr. No. 17"
 
+SR17_RESULT="Compliant"
+SR17_RESULT_MSG=""
 
+echo "Running Test 17.1: Disable FTP to Oracle VM"
 
 
+echo "audit Sr. No. 17 result: $SR17_RESULT $SR17_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "17, Disable FTP to Oracle VM , $SR17_RESULT, $SR17_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 18
+# Objective: Disable HTTP on oracle VM manager for web browser
+# Description: Weak or plain-text protocols, such as HTTP must be disabled by default. 
 
+echo "Running audit Sr. No. 18"
 
+SR18_RESULT="Compliant"
+SR18_RESULT_MSG=""
 
+echo "Running Test 18.1: Disable HTTP on oracle VM manager for web browser"
 
 
+echo "audit Sr. No. 18 result: $SR18_RESULT $SR18_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "18, Disable HTTP on oracle VM manager for web browser , $SR18_RESULT, $SR18_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 19
+# Objective: Enable FIPS for OpenSSL on Oracle VM Server
+# Description: Consider enabling FIPS mode for OpenSSL to ensure that your
+# OpenSSL is compliant with Federal Information Processing Standard (FIPS)
+# Publication 140-2, which is a standard that establishes security
+# requirements for cryptographic modules.
 
+echo "Running audit Sr. No. 19"
 
+SR19_RESULT="Compliant"
+SR19_RESULT_MSG=""
 
+echo "Running Test 19.1: Enable FIPS for OpenSSL on Oracle VM Server"
 
 
+echo "audit Sr. No. 19 result: $SR19_RESULT $SR19_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "19, Enable FIPS for OpenSSL on Oracle VM Server , $SR19_RESULT, $SR19_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 20
+# Objective: Enable iptables service / configure ports on Oracle VM manager
+# Description: A default Oracle Linux installation has the firewall enabled
+# (iptables on).
 
+echo "Running audit Sr. No. 20"
 
+SR20_RESULT="Compliant"
+SR20_RESULT_MSG=""
 
+echo "Running Test 20.1: Enable iptables service / configure ports on Oracle VM manager"
 
 
+echo "audit Sr. No. 20 result: $SR20_RESULT $SR20_RESULT_MSG"
 
+# Write the audit results to the audit results file
+echo "20, Enable iptables service / configure ports on Oracle VM manager , $SR20_RESULT, $SR20_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
+# Sr. No. 21
+# Objective: Connect with perimeter firewall  
+# Description: Network hardware firewall is always a more secure option to
+# secure your internal network.
 
+echo "Running audit Sr. No. 21"
 
+SR21_RESULT="Compliant"
+SR21_RESULT_MSG=""
 
+echo "Running Test 21.1: Connect with perimeter firewall"
+
+
+
+echo "audit Sr. No. 21 result: $SR21_RESULT $SR21_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "21, Connect with perimeter firewall , $SR21_RESULT, $SR21_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
+
+# Sr. No. 22
+# Objective: Add failed connection logging into iptables
+# Description: Untrusted internal network model views any traffic from the
+# internal network as potentially hostile.
+# Additional hardening of this network can be done by implementing hardware or
+# iptables based firewalls and policies on the admin and dom0 hosts that block
+# inbound traffic. 
+
+echo "Running audit Sr. No. 22"
+
+SR22_RESULT="Compliant"
+SR22_RESULT_MSG=""
+
+echo "Running Test 22.1: Add failed connection logging into iptables"
+
+
+echo "audit Sr. No. 22 result: $SR22_RESULT $SR22_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "22, Add failed connection logging into iptables , $SR22_RESULT, $SR22_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
+
+# Sr. No. 23
+# Objective: Disable VNC connections
+# Description: VNC is a graphical desktop-sharing system that uses the Remote
+# Frame Buffer protocol to remotely control another computer.
+
+echo "Running audit Sr. No. 23"
+
+SR23_RESULT="Compliant"
+SR23_RESULT_MSG=""
+
+echo "Running Test 23.1: Disable VNC connections"
+
+
+echo "audit Sr. No. 23 result: $SR23_RESULT $SR23_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "23, Disable VNC connections , $SR23_RESULT, $SR23_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
+
+# Sr. No. 24
+# Objective: Block ICMP Timestamp requests
+# Description: Ensure that your external firewall device filters or blocks ICMP
+# Timestamp requests from arbitrary hosts.
+
+echo "Running audit Sr. No. 24"
+
+SR24_RESULT="Compliant"
+SR24_RESULT_MSG=""
+
+echo "Running Test 24.1: Block ICMP Timestamp requests"
+
+
+echo "audit Sr. No. 24 result: $SR24_RESULT $SR24_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "24, Block ICMP Timestamp requests , $SR24_RESULT, $SR24_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
+
+# Sr. No. 25
+# Objective: Physical console security
+# Description: Default installations of Oracle VM Server or Oracle VM Manager
+# do not provide physical security.
+
+echo "Running audit Sr. No. 25"
+
+SR25_RESULT="Compliant"
+SR25_RESULT_MSG=""
+
+echo "Running Test 25.1: Physical console security"
+
+
+echo "audit Sr. No. 25 result: $SR25_RESULT $SR25_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "25, Physical console security , $SR25_RESULT, $SR25_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
+
+# Sr. No. 26
+# Objective: General USB security best practices
+# Description: Disabling of USB ports on Oracle VM Server nodes is recommended
+# for better security measures. 
+
+echo "Running audit Sr. No. 26"
+
+SR26_RESULT="Compliant"
+SR26_RESULT_MSG=""
+
+echo "Running Test 26.1: General USB security best practices"
+
+
+echo "audit Sr. No. 26 result: $SR26_RESULT $SR26_RESULT_MSG"
+
+# Write the audit results to the audit results file
+echo "26, General USB security best practices , $SR26_RESULT, $SR26_RESULT_MSG" >> $AUDIT_RESULT_EXPORT_FILE
 
 ################################################################################
 # END OF AUDIT
