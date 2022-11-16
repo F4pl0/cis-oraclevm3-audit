@@ -20,6 +20,9 @@ SYSTEM_IDENTITY=$HOSTNAME
 OPERATOR_NAME=""
 SYSTEM_DATE=$(date '+%Y-%m-%d_%H:%M:%S')
 
+# Admin password needed for Oracle VM Manager CLI
+OVMM_CLI_ADMIN_PASSWORD=""
+
 AUDIT_RESULT_EXPORT_FILE="config-review-$OSTYPE-$SYSTEM_IDENTITY.csv"
 
 ################################################################################
@@ -34,6 +37,9 @@ fi
 
 # Get the operator name
 read -p "Enter your name: " OPERATOR_NAME
+
+# Get the Oracle VM Manager CLI admin password
+read -s -p "Enter the Oracle VM Manager CLI admin password: " OVMM_CLI_ADMIN_PASSWORD
 
 # Print out OS and version, system identity, operator name and date
 echo "OS and version: $OS_NAME_AND_VERSION"
@@ -74,11 +80,11 @@ echo "Serial No#,Control Objective,Compliance Status,Additional Comments" >> $AU
 
 echo "Running audit Sr. No. 1"
 
-SR1_RESULT="Compliant"
-SR1_RESULT_MSG=""
+SR1_RESULT="Manual-only"
+SR1_RESULT_MSG="Manually check if each Administrator user has its own separate user to access VM manager."
 
-echo "Running Test 1.1: Limit the access to VM Manager host and VM Server"
-
+# echo "Running Test 1.1: Limit the access to VM Manager host and VM Server"
+# SR1_TEST1=$(echo "$OVMM_CLI_ADMIN_PASSWORD" | /u01/app/oracle/ovm-manager-3/bin/ovm_admin --listusers | tail -1)
 
 echo "audit Sr. No. 1 result: $SR1_RESULT $SR1_RESULT_MSG"
 
@@ -92,11 +98,8 @@ echo "1, Limit the access to VM Manager host and VM Server , $SR1_RESULT, $SR1_R
 
 echo "Running audit Sr. No. 2"
 
-SR2_RESULT="Compliant"
-SR2_RESULT_MSG=""
-
-echo "Running Test 2.1: Delete / restrict the non admin user"
-
+SR2_RESULT="Manual-only"
+SR2_RESULT_MSG="Manually check if there are redundant non admin users."
 
 echo "audit Sr. No. 2 result: $SR2_RESULT $SR2_RESULT_MSG"
 
